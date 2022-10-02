@@ -1,0 +1,23 @@
+name: tor-snowflake
+base: core20
+version: 'v2.3.0'
+summary: Snowflake proxy
+description: Snowflake proxy for Tor
+grade: stable
+confinement: strict
+
+apps:
+  snowflake:
+    command: bin/proxy
+    daemon: simple
+    plugs:
+      - network
+      - network-bind
+
+parts:
+  snowflake:
+    source: https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/snowflake.git
+    source-type: git
+    source-tag: 'v2.3.0'
+    source-subdir: proxy
+    plugin: go
