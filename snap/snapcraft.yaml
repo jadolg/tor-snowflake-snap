@@ -8,7 +8,7 @@ confinement: strict
 
 apps:
   snowflake:
-    command: bin/proxy
+    command: bin/proxy -log $SNAP_DATA/snowflake.log
     daemon: simple
     plugs:
       - network
