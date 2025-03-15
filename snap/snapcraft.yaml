@@ -1,5 +1,5 @@
 name: tor-snowflake
-base: core20
+base: core24
 version: 'v2.10.1'
 summary: Snowflake proxy
 description: Snowflake proxy for Tor
