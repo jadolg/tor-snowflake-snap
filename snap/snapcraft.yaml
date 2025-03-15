@@ -21,3 +21,4 @@ parts:
     source-tag: 'v2.10.1'
     source-subdir: proxy
     plugin: go
+    build-snaps: [go/latest/stable]
