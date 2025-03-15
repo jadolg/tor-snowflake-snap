@@ -1,0 +1,2 @@
+#!/bin/sh -e
+echo "Please consider opening the following ports in your firewall: 32768:60999/udp"
