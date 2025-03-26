@@ -1,6 +1,6 @@
 name: tor-snowflake
 base: core24
-version: 'v2.10.1'
+version: 'v2.11.0'
 summary: Snowflake proxy
 description: Snowflake proxy for Tor
 grade: stable
@@ -25,7 +25,7 @@ parts:
   snowflake:
     source: https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/snowflake.git
     source-type: git
-    source-tag: 'v2.10.1'
+    source-tag: 'v2.11.0'
     source-subdir: proxy
     plugin: go
     build-snaps: [go/latest/stable]
