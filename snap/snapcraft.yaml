@@ -6,6 +6,10 @@ description: Snowflake proxy for Tor
 grade: stable
 confinement: strict
 
+layout:
+  /usr/share/tor:
+    bind: $SNAP/usr/share/tor
+
 apps:
   snowflake:
     command: bin/proxy -log $SNAP_DATA/snowflake.log -metrics
@@ -29,3 +33,6 @@ parts:
     source-subdir: proxy
     plugin: go
     build-snaps: [go/latest/stable]
+    stage-packages:
+      - tor
+      - tor-geoipdb
